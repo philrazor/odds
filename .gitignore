@@ -1,0 +1,5 @@
+# the virtual environment directory
+virt/
+
+db.sqlite3
+settings.py
