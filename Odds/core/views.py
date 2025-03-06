@@ -9,3 +9,9 @@ def about(request):
 
 def contact(request):
     return render(request , "core/contact.html")
+
+def login_user(request):
+    return render(request , "core/login_user.html")
+
+def register_user(request):
+    return render(request , "core/register_user.html")

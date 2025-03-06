@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}My Web App{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -17,6 +19,8 @@
                     <li><a href="{% url 'core:home' %}">Home</a></li>
                     <li><a href="{% url 'core:about' %}">About</a></li>
                     <li><a href="{% url 'core:contact' %}">Contact</a></li>
+                    <li><a href="{% url 'core:login_user' %}">login</a></li>
+                    <li><a href="{% url 'core:register_user' %}">Signup</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,8 +34,39 @@
     </main>
 
     <!-- Footer -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 My Web App. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'core:home' %}">Home</a></li>
+                    <li><a href="{% url 'core:about' %}">About</a></li>
+                    <li><a href="{% url 'core:contact' %}">Contact</a></li>
+                    <li><a href="{% url 'core:login_user' %}">Login</a></li>
+                    <li><a href="{% url 'core:register_user' %}">Signup</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: pnjuguna.main@gmail.com</p>
+                <p>Phone: +254 748 065 379</p>
+                <p>Nairobi, Kenya</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Phil Enterprises. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
